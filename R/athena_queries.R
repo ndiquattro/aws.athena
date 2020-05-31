@@ -51,7 +51,7 @@ create_athena_query <- function(query, name, databse, workgroup = NULL, descript
   bod <- list()
   bod$Name <- name
   bod$WorkGroup <- workgroup
-  bod$ClientRequestToken <- paste(sample.int(32), collapse = "")
+  bod$ClientRequestToken <- uuid::UUIDgenerate()
   bod$Database <- database
   bod$QueryString <- query
   bod$Description <- description

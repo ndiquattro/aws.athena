@@ -2,7 +2,7 @@
 #'
 #' Get, Start, and Stop Athena Query Executions
 #'
-#' @param id A character string containing an Amazon Athena Query Executionn ID. A vector of IDs can also be specified to request multiple query executions.
+#' @param id A character string containing an Amazon Athena Query Execution ID. A vector of IDs can also be specified to request multiple query executions.
 #' @param workgroup A character string containing the workgroup's name.
 #' @param database Name of the database to associate with the query.
 #' @param n An integer specifying the maximum number of results to return.
@@ -61,7 +61,7 @@ get_athena_execution <- function(id, ...) {
 start_athena_execution <- function(query, workgroup = NULL, database = NULL, output = NULL, encryption = NULL, ...) {
   bod <- list()
   bod$WorkGroup <- workgroup
-  bod$ClientRequestToken <- paste(sample.int(32), collapse = "")
+  bod$ClientRequestToken <- uuid::UUIDgenerate()
   bod$QueryString <- query
   bod$ResultConfiguration$EncryptionConfiguration <- encryption
   if (!is.null(database)) bod$QueryExecutionContext <- list(Database = database)
