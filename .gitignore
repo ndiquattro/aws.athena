@@ -2,7 +2,6 @@
 .Rproj.user
 .Rhistory
 .RData
-*.Rproj
 README.html
 /inst/doc/*.log
 /vignettes/*.log
