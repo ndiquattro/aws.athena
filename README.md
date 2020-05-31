@@ -1,6 +1,15 @@
-# AWS Athena Client Package
+# AWS Athena Client Package Fork
 
-**aws.athena** is a package for AWS Athena.
+**Note:** This is a fork from the currently abandoned [https://github.com/cloudyr/aws.athena](https://github.com/cloudyr/aws.athena). I just applied my own formatting preferences, made the existing functions work, and added a few extras. I don't have any affiliation with cloudyr, but I love their work!
+
+### Install
+
+``` r
+#install.packages("remotes")
+remotes::install_github("ndiquattro/aws.athena")
+```
+
+## From Original README
 
 To use the package, you will need an AWS account and to enter your credentials into R. Your keypair can be generated on the [IAM Management Console](https://aws.amazon.com/) under the heading *Access Keys*. Note that you only have access to your secret key once. After it is generated, you need to save it in a secure location. New keypairs can be generated at any time if yours has been lost, stolen, or forgotten. The [**aws.iam** package](https://github.com/cloudyr/aws.iam) profiles tools for working with IAM, including creating roles, users, groups, and credentials programmatically; it is not needed to *use* IAM credentials.
 
@@ -30,39 +39,3 @@ aws.signature::use_credentials(profile = "bob")
 ```
 
 Temporary session tokens are stored in environment variable `AWS_SESSION_TOKEN` (and will be stored there by the `use_credentials()` function). The [aws.iam package](https://github.com/cloudyr/aws.iam/) provides an R interface to IAM roles and the generation of temporary session tokens via the security token service (STS).
-
-
-## Code Examples
-
-```R
-library("aws.athena")
-```
-
-
-## Installation
-
-[![CRAN](https://www.r-pkg.org/badges/version/aws.athena)](https://cran.r-project.org/package=aws.athena)
-![Downloads](https://cranlogs.r-pkg.org/badges/aws.athena)
-[![Travis Build Status](https://travis-ci.org/cloudyr/aws.athena.png?branch=master)](https://travis-ci.org/cloudyr/aws.athena)
-[![Appveyor Build Status](https://ci.appveyor.com/api/projects/status/PROJECTNUMBER?svg=true)](https://ci.appveyor.com/project/cloudyr/aws.athena)
-[![codecov.io](https://codecov.io/github/cloudyr/aws.athena/coverage.svg?branch=master)](https://codecov.io/github/cloudyr/aws.athena?branch=master)
-
-This package is not yet on CRAN. To install the latest development version you can install from the cloudyr drat repository:
-
-```R
-# latest stable version
-install.packages("aws.athena", repos = c(cloudyr = "http://cloudyr.github.io/drat", getOption("repos")))
-```
-
-Or, to pull a potentially unstable version directly from GitHub:
-
-```R
-if (!require("remotes")) {
-    install.packages("remotes")
-}
-remotes::install_github("cloudyr/aws.athena")
-```
-
-
----
-[![cloudyr project logo](https://i.imgur.com/JHS98Y7.png)](https://github.com/cloudyr)
