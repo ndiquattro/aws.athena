@@ -11,3 +11,4 @@ knitreadme.sh
 ^\.Rproj\.user$
 ^\.github.?
 ^revdep.?
+^aws\.athena\.Rproj$
