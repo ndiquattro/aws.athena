@@ -1,7 +1,7 @@
 Package: aws.athena
 Type: Package
 Title: 'AWS Athena' Client Package
-Version: 0.1.1
+Version: 0.1.1.9000
 Date: 2018-08-17
 Authors@R: c(person("Thomas J.", "Leeper", role = c("aut"),
                     email = "thosjleeper@gmail.com",
