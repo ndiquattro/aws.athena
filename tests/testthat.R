@@ -1,4 +1,4 @@
-library("testthat")
-library("aws.athena")
+library(testthat)
+library(aws.athena)
 
 test_check("aws.athena")

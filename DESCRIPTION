@@ -12,11 +12,12 @@ Description: Client package for 'AWS Athena' <https://aws.amazon.com/athena/>, a
 License: GPL (>= 2)
 URL: https://github.com/ndiquattro/aws.athena
 BugReports: https://github.com/ndiquattro/aws.athena/issues
-Imports:
+Imports: 
     httr,
     aws.signature (>= 0.3.7),
     uuid
-Suggests:
+Suggests: 
+    httptest,
     testthat
 RoxygenNote: 7.1.0
 Roxygen: list(markdown = TRUE)
