@@ -47,7 +47,7 @@ get_athena_query <- function(id, ...) {
 
 #' @rdname queries
 #' @export
-create_athena_query <- function(query, name, databse, workgroup = NULL, description = NULL, ...) {
+create_athena_query <- function(query, name, database, workgroup = NULL, description = NULL, ...) {
   bod <- list()
   bod$Name <- name
   bod$WorkGroup <- workgroup
