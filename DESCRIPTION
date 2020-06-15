@@ -15,9 +15,11 @@ BugReports: https://github.com/ndiquattro/aws.athena/issues
 Imports: 
     httr,
     aws.signature (>= 0.3.7),
-    uuid
+    uuid,
+    jsonlite
 Suggests: 
     httptest,
-    testthat
+    testthat,
+    covr
 RoxygenNote: 7.1.0
 Roxygen: list(markdown = TRUE)

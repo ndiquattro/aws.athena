@@ -8,6 +8,7 @@
 #' @param query SQL that comprises the query.
 #' @param description Description of the query.
 #' @param n An integer specifying the maximum number of results to return.
+#' @param workgroup A character string containing the workgroup's name.
 #' @param token A character string specifying a continuation token, for pagi
 #' nation.
 #' @param \dots Additional arguments passed to \code{\link{athenaHTTP}}
