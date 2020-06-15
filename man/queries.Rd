@@ -14,7 +14,7 @@ get_athena_query(id, ...)
 create_athena_query(
   query,
   name,
-  databse,
+  database,
   workgroup = NULL,
   description = NULL,
   ...
@@ -24,6 +24,8 @@ delete_athena_query(id, ...)
 }
 \arguments{
 \item{n}{An integer specifying the maximum number of results to return.}
+
+\item{workgroup}{A character string containing the workgroup's name.}
 
 \item{token}{A character string specifying a continuation token, for pagi
 nation.}
@@ -36,9 +38,9 @@ nation.}
 
 \item{name}{Name of the query.}
 
-\item{description}{Description of the query.}
-
 \item{database}{Name of the database to associate with the query.}
+
+\item{description}{Description of the query.}
 }
 \description{
 Get, Create, and Delete Athena Queries

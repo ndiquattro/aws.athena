@@ -31,9 +31,15 @@ stop_athena_execution(id, ...)
 
 \item{\dots}{Additional arguments passed to \code{\link{athenaHTTP}}}
 
-\item{id}{A character string containing an Amazon Athena Query Executionn ID. A vector of IDs can also be specified to request multiple query executions.}
+\item{id}{A character string containing an Amazon Athena Query Execution ID. A vector of IDs can also be specified to request multiple query executions.}
+
+\item{query}{A character string containing the SQL code to execute.}
 
 \item{database}{Name of the database to associate with the query.}
+
+\item{output}{A character string containing where the query results should be saved.}
+
+\item{encryption}{A character string indicating encryption specification.}
 }
 \description{
 Get, Start, and Stop Athena Query Executions
