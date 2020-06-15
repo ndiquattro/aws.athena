@@ -12,3 +12,5 @@ knitreadme.sh
 ^\.github.?
 ^revdep.?
 ^aws\.athena\.Rproj$
+^\.github$
+^codecov\.yml$

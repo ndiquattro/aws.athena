@@ -18,6 +18,7 @@ Imports:
     uuid
 Suggests: 
     httptest,
-    testthat
+    testthat,
+    covr
 RoxygenNote: 7.1.0
 Roxygen: list(markdown = TRUE)

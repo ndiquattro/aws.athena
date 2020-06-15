@@ -1,5 +1,8 @@
 # AWS Athena Client Package Fork
-
+<!-- badges: start -->
+[![R build status](https://github.com/ndiquattro/aws.athena/workflows/R-CMD-check/badge.svg)](https://github.com/ndiquattro/aws.athena/actions)
+[![Coveralls test coverage](https://coveralls.io/repos/github/ndiquattro/aws.athena/badge.svg)](https://coveralls.io/r/ndiquattro/aws.athena?branch=master)
+<!-- badges: end -->
 **Note:** This is a fork from the currently abandoned [https://github.com/cloudyr/aws.athena](https://github.com/cloudyr/aws.athena). I just applied my own formatting preferences, made the existing functions work, and added a few extras. I don't have any affiliation with cloudyr, but I love their work!
 
 ### Install
