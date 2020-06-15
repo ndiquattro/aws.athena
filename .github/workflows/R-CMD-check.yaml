@@ -83,4 +83,4 @@ jobs:
         if: matrix.config.os == 'macOS-latest' && matrix.config.r == 'release'
         env:
           COVERALLS_TOKEN: ${{ secrets.COVERALLS_TOKEN }}
-        run: Rscript -e 'covr::coveralls(service_name ="GHA")'
+        run: Rscript -e 'covr::coveralls(service_name ="travis-pro")'
