@@ -7,6 +7,9 @@
 #' @param database Name of the database to associate with the query.
 #' @param n An integer specifying the maximum number of results to return.
 #' @param token A character string specifying a continuation token, for pagination.
+#' @param query A character string containing the SQL code to execute.
+#' @param output A character string containing where the query results should be saved.
+#' @param encryption A character string indicating encryption specification.
 #' @param \dots Additional arguments passed to \code{\link{athenaHTTP}}
 #'
 #' @references

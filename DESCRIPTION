@@ -15,7 +15,8 @@ BugReports: https://github.com/ndiquattro/aws.athena/issues
 Imports: 
     httr,
     aws.signature (>= 0.3.7),
-    uuid
+    uuid,
+    jsonlite
 Suggests: 
     httptest,
     testthat,
